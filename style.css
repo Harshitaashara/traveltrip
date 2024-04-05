@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:century gothic;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0)),url(bg.png);
+    background-size: cover;
+    background-position: center;
+} 
+.navbar{
+    width:85%;
+    margin:auto;
+    padding-top: 35px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width:150px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    position:relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: beige;
+    text-transform:uppercase;
+}
+.navbar ul li::after{
+    content:'';
+    height:3px;
+    width:0%;
+    background: #E1D4BB;
+    position: absolute;
+    left: 0;
+    bottom: -8;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: antiquewhite;
+}
+.content h2{
+    margin-top: 80px;
+	font-size: 40;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #7C9070;
+    background: transparent;
+    color: antiquewhite;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #7C9070;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+      width: 100%;
+}
+button:hover{
+    border: none;
+}
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content:space-evenly;
+}
+p{
+	color: #393E46;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: sans-serif;
+	line-height: 22px;
+	padding: 10px;
+}
+.course-col{
+	flex-basis: 31%;
+	background: #ECE8DD;
+	border-radius: 10px;
+	margin-bottom: 2%;
+	text-align: center;
+	padding: 20px 12px;
+	box-sizing:content-box;
+	transition: 0.5s;
+}
+.course-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.7);
+}
+.features h1{
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 40px;
+	font-size: 50;
+	color: #562B08;
+}
+.cta{
+	margin: 20px 50px;
+	background-image: linear-gradient(to right, #3f2321, transparent),url(tn2.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+	padding: 5%;
+	color: #fff;
+}
+.cta h2{
+	font-size: 4vw;
+	line-height: 5.3vw;
+	font-weight: 500;
+}
+.cta2{
+	margin: 20px 50px;
+	background-image: linear-gradient(to left, #3f2321, transparent),url(k.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+	padding: 5%;
+	color: #fff;
+}
+.cta2 h2{
+	font-size: 4vw;
+	line-height: 5.3vw;
+	font-weight: 500;
+    text-align: right;
+}
+.cta-btn{
+	background: #fff;
+	color: black;
+	text-decoration: none;
+	padding: 12px 30px;
+	border-radius: 8px;
+	margin-top: 20px;
+	display: inline-block;
+}
+.packages{
+	padding: 0px 30px;
+	background: #FFFBE9;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+.packages h1{
+	padding-top: 40px;
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 50;
+	color: #562B08;
+}
+.pc-box img{
+	width: 100%;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+	padding-top: 0px;
+}
+
+.pc-box img:hover{
+	transform: scale(1.1);
+}
+.pc-box h4{
+	width: 200px;
+	color: #fff;
+	text-shadow: -2px 2px 2px #000;
+	text-align: center;
+	font-weight: 600;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+}
+.pc-box{
+	position: relative;
+	margin-bottom: 30px;
+}
+.book{
+	height: 80%;
+	background-image: url(b.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 10%;
+	padding-bottom: 6%;
+}
+.book-highlights{
+	padding: 50px 0px;
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+	color: antiquewhite;
+}
+.booking-btn{
+	width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: antiquewhite;
+    cursor: pointer;
+    position: relative;
+    overflow:hidden;
+}
+.footer{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}
+.footer{
+	margin-bottom: 25px;
+	margin-top: 20px;
+}
+.info{
+	padding: 5px 20px;
+	background-color: #000000;
+	color: #fff;
+}
+.footer-logo{
+	width: 150px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.info h4{
+	text-align: left;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+.info p{
+	font-size: 12px;
+	text-align: justify;
+	padding-right: 35px;
+}
+
+
+
+
+
+
+
+
